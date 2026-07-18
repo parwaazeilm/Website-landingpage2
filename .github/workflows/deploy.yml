@@ -33,7 +33,7 @@ jobs:
           path: dist/spa
 
   deploy:
-    needs: buildx
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
